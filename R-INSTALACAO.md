@@ -4,8 +4,14 @@
 
 <code>git clone https://github.com/wadyntecno/LaravelBreezeLirewire.git "renomearoprojeto" && "renomearoprojeto"  </code>
 
-#### Generate application key:
+#### Copiar env:
 <code> cp .env.example .env </code>
+
+
+#### Generate application key:
+<code> sail artisan key:generate </code>
+
+
 
 #### trocar o nome do BANCO DE DADOS no projeto 
 <p>DB_DATABASE="mesmoNomeDoProjeto"</p>
