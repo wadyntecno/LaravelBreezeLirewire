@@ -2,15 +2,13 @@
 
 ## Procedimento na instalação deste projeto
 
-<code>git clone https://github.com/wadyntecno/LaravelBreezeLirewire.git "renomearoprojeto" && "renomearoprojeto"  </code>
+<code>git clone https://github.com/wadyntecno/LaravelBreezeLirewire.git "renomearoprojeto"   </code>
 
-#### Copiar env:
+#### Copiar o env:
 <code> cp .env.example .env </code>
-
 
 #### Generate application key:
 <code> sail artisan key:generate </code>
-
 
 
 #### trocar o nome do BANCO DE DADOS no projeto 
@@ -20,7 +18,7 @@
 <code>  composer install </code>
 
 ### Caso  o primeiro comando não funcione
-#### Rodar código o abaixo
+#### Rodar código abaixo
 <code> docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v "$(pwd):/var/www/html" \
