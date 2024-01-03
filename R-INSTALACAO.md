@@ -20,7 +20,7 @@
 <code>  composer install </code>
 
 ### Caso  o primeiro comando não funcione
-#### RODAR o abaixo
+#### Rodar código o abaixo
 <code> docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v "$(pwd):/var/www/html" \
@@ -29,8 +29,9 @@
     composer install --ignore-platform-reqs </code>
 
 
-####
-##### exemplo escrito dentro no BD condicionar para esta configuração
+###
+#### exemplo escrito dentro no BD condicionar para esta configuração
+##### ** troque o nome do banco "DB_DATABASE"
 <code> DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
@@ -38,14 +39,15 @@ DB_DATABASE=olw-1dep
 DB_USERNAME=sail
 DB_PASSWORD=password </code>
 
-#### VITE - não funciona (colocar no vite.config.js)
+#### VITE 
+##### caso não funciona (colocar no vite.config.js)
 <code> server: {
         hmr: {
             host: "localhost"
         }
     }, </code>
 
-#### colocar no package.json
+##### caso não tenha (colocar no package.json)
 <code>   "dev": "vite --host localhost", </code>
 
 #### INSTALAR O NPM
@@ -54,6 +56,6 @@ DB_PASSWORD=password </code>
 #### ativar pacotes
 <code> sail up -d </code>
 
-#### pra finalizar::: em outro terminal
+#### em outro terminal
 <code> npm run dev </code>
 
